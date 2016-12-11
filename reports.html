@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Reports</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"> </a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="C:\Users\ranjithkumar\Desktop\navigation.html">Home</a></li>
+				<li><a href="#">Item Stock</a></li>
+				<li><a href="#">Approval</a></li>
+				<li class="active"><a
+					href="C:\Users\ranjithkumar\Desktop\reports.html">Reports</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div>
+		<form>
+			<input type="label" name="range" value="choose a Range"><br>
+			<br> <input type="radio" name="range" value="range" id="range"
+				onclick="document.getElementById('from_date').removeAttribute('disabled');document.getElementById('to_date').removeAttribute('disabled');">From:<input
+				type="date" name="from" id="from_date" disabled><br>
+			<br> To:<input type="date" id="to_date" disabled> <br>
+			<br> <input type="radio" name="range" value="Month" id="month">Month:<input
+				type="date" id="month" disabled><br>
+			<br> <input type="radio" name="range" value="Daily stock"
+				id="daily_stock">Daily Stock<br>
+			<br> <input type="radio" name="range" value="Approval"
+				id="approval">Approval: <input type="checkbox"
+				value="Include settled records:" id="settled_records">Include
+			settled<br>
+			<br>
+			<center>
+				<input type="submit" value="Generate Report">
+			</center>
+
+
+		</form>
+	</div>
+</body>
+</html>
